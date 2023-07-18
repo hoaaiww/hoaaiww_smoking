@@ -14,6 +14,7 @@ end)
 --Version Check
 
 if Config.CheckForUpdates then
+    local curVersion = GetResourceMetadata(GetCurrentResourceName(), "version")
     local resourceName = GetCurrentResourceName()
 
     CreateThread(function()
