@@ -1,6 +1,6 @@
 Config = {}
 Config.ItemsName = {
-    ['Cigaretta'] = 'cigaretta',
+    ['Cigarette'] = 'smoke',
 
     -- Add more like this:
     -- ['Item Label'] = 'Item Name'
@@ -13,8 +13,7 @@ Config.smokingSpeed = 5 -- The smoking time (1 = very slow, 5 = average, 10 = fa
 
 Config.Texts = {
     ['used_item']           = 'You have pick out a %s from your pocket.',
-    ['cancel']              = 'Press ~INPUT_REPLAY_TIMELINE_PICKUP_CLIP~ to stop smoking',
-    ['mask_not_allowed']    = 'You can\'t smoke in this mask!'
+    ['stop']                = 'Press ~INPUT_REPLAY_TIMELINE_PICKUP_CLIP~ to stop smoking'
 }
 
 Config.CheckForUpdates = true
