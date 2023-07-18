@@ -70,7 +70,7 @@ end)
 CreateThread(function()
     while true do
         if smoking or smokingIntro then
-            ESX.ShowHelpNotification(Config.Texts['cancel'])
+            HelpNotification(Config.Texts['cancel'])
 
             if IsControlJustPressed(0, Config.CancelButton) then
                 stopSmoking()
@@ -81,6 +81,12 @@ CreateThread(function()
         Wait(0)
     end
 end)
+
+function HelpNotification(msg)
+	SetTextComponentFormat("STRING")
+	AddTextComponentString(msg)
+	DisplayHelpTextFromStringLabel(0, false, true, -1)
+end
 
 function stopSmoking()
     local playerPed = PlayerPedId()
