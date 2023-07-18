@@ -14,8 +14,10 @@ end)
 --Version Check
 
 if Config.CheckForUpdates then
+    local resourceName = GetCurrentResourceName()
+
     CreateThread(function()
-        if GetCurrentResourceName() ~= "hoaaiww_smoking" then
+        if resourceName ~= "hoaaiww_smoking" then
             resourceName = "hoaaiww_smoking (" .. GetCurrentResourceName() .. ")"
         end
     end)
